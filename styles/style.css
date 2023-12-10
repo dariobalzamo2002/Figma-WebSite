@@ -1,0 +1,110 @@
+/* VARIABILI GLOBALI */
+
+:root {
+    --asideGreen: #51E8B7;
+    --colorBlcak: rgba(0, 0, 0, 0.418);
+    --colorWhite: white;
+}
+
+
+/* STILE */
+
+.content-green {
+    background-color: var(--asideGreen);
+}
+
+.card {
+    background-color: var(--asideGreen);
+    border: none;
+}
+
+.content-white.logo-img {
+    width: 100%;
+    height: fit-content;
+}
+
+.card-title,
+.card-subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+.card-body .text-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+.card-text {
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.card-body .text-p {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.description .text-bold {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+
+.description {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-img img {
+    width: fit-content;
+    height: fit-content;
+}
+
+.icon .list-icon li {
+    list-style: none;
+}
+
+.buttons .btn-green {
+    background-color: var(--asideGreen);
+}
+
+.card-body .footer-title {
+    font-weight: bold;
+}
+
+.card-body .footer-info {
+    color: var(--colorBlcak);
+    font-weight: 400;
+}
+
+textarea {
+    width: 100%;
+    height: 300px;
+}
+
+
+/* MEDIA QUERIES*/
+
+@media screen and (max-width: 990px) {
+    .contacts-box {
+        flex-direction: column-reverse;
+    }
+
+    .contacts-box .card,
+    .content-green {
+        background-color: var(--colorWhite);
+    }
+
+    .contacts-box .content-green {
+        flex-direction: row-reverse;
+    }
+
+    .card-contacts {
+        text-align: start;
+    }
+
+    .my-footer {
+        flex-direction: row-reverse;
+    }
+}
